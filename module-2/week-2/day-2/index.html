@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Playground</title>
+            <link rel="stylesheet" href="normalize.css" />
+            <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1 id="headingH1">JS Playground</h1>
+        </header>
+        <nav>
+            <div>
+                <img id="logoImage" src="https://images.unsplash.com/photo-1613047880926-105f6e0662ec?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" />
+            <span id="companyName">Company</span>
+            </div>
+
+            <div class="links">
+                <a>home</a>
+                <a>about</a>
+                <a>contact</a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search" id="searchInput"/>
+                <button type="submit" onclick="searchFunction()">Submit</button>
+            </div>
+        </nav>
+        <main>
+            <img class="tigerImage" src="https://images.unsplash.com/photo-1615963244664-5b845b2025ee?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDk1fDZzTVZqVExTa2VRfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="">
+        <form id="tigerQuestion">
+            <label>Do you like this photo?</label>
+            <input type="text"/></form>
+        </main>
+    </body>
+    <script src="script.js"></script>
+</html>

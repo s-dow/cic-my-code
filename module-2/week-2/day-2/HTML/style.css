@@ -1,0 +1,18 @@
+body {
+    background-color: darkslategrey;
+}
+p {
+    border: 5px solid;
+    border-color: black;
+    border-width: 10px;
+}
+
+#page {
+    width: 200px;
+    color: darkseagreen;
+}
+
+.check {
+    color: firebrick;
+}
+

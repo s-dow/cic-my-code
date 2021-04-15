@@ -5,10 +5,19 @@ nav {
 
 nav > div {
     flex: 1;
+    border: 1px black solid;
+}
+
+#logo > p {
+    margin: 10px;
 }
 
 #search {
-    text-align: right;
+    text-align: left;
+}
+
+#search > p {
+    margin: 10px;
 }
 
 #links {
@@ -19,6 +28,5 @@ nav > div {
 
 #links > p {
     flex: 1;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 10px;
 }
