@@ -1,0 +1,54 @@
+body {
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.navbar {
+  opacity: 60%;
+}
+
+.regFont {
+  font-family: "Chivo", sans-serif;
+  font-weight: 300;
+  font-size: 65px;
+  opacity: 60%;
+}
+
+.boldFont {
+  font-family: "Chivo", sans-serif;
+  font-weight: 400;
+  font-size: 65px;
+  opacity: 60%;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 55px;
+}
+
+.slides {
+  width: 40%;
+  opacity: 100%;
+}
+
+.carousel-inner {
+  border-radius: 75px;
+  background-color: rgba(0, 0, 0, 0);
+  overflow: hidden;
+}
+.slideContainer {
+  margin-top: 55px;
+}
+
+.signUp {
+  width: 60%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.emailBtn {
+  background-color: antiquewhite;
+  color: rgb(75, 72, 72);
+  border: none;
+}
