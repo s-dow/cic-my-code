@@ -1,0 +1,30 @@
+{
+  "name": "@writetome51/to-str",
+  "version": "0.0.1",
+  "description": "Function returns arg as string. Fastest way to convert to string",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/writetome51/to-str.git"
+  },
+  "keywords": [
+    "convert",
+    "to",
+    "as",
+    "string",
+    "strings",
+    "str",
+    "function"
+  ],
+  "author": "Steve Thompson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/writetome51/to-str/issues"
+  },
+  "homepage": "https://github.com/writetome51/to-str#readme"
+}
