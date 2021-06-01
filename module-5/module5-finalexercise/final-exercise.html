@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="booksList"></div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+      const list = `<div class="list">
+            <h2>{listname}</h2>
+            {books}
+            </div>`;
+
+      let books = `<div class="books">
+            <img src="{image}"/>
+            <h3>{title} by {author}</h3>
+            <a href="{link}">Link</a>`;
+
+      const container = document.getElementById("booksList");
+      let promise = axios.get(
+        "https://api.nytimes.com/svc/books/v3/lists/overview.json?api-key=Y6yaSyIMlvJOAyaYmjxvxeaFntgqVLmn"
+      );
+
+      promise.then(function (response) {
+        console.log(response);
+        const body = response.data;
+        for (let list of body.results.lists) {
+          const name = list.list_name;
+          const node = document.createElement("div");
+          node.innerHTML = name;
+          document.body.appendChild(node);
+          // test
+          let bookHTML = list.books.map((book) => {
+            books = books
+              .replace("{title}", book.title)
+              .replace("{author}", book.author)
+              .replace("{image}", book.book_image)
+              .replace("{link}", book.amazon_product_url);
+            console.log(book.author);
+            console.log(book.title);
+            container.innerHTML += books;
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
