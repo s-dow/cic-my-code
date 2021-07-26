@@ -1,0 +1,26 @@
+.drImg {
+  width: 27%;
+}
+
+.card {
+  margin-top: 8%;
+  padding: 30px;
+}
+
+.card-body {
+  padding: 0;
+  padding-top: 15px;
+}
+.form-control {
+  width: 100%;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+}
+
+.btn {
+  background-color: #4bb5ff;
+  border-color: #4bb5ff;
+}
